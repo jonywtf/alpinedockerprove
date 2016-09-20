@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM docker:1.10.3
 
-RUN apk add --no-cache perl make docker
+RUN apk add --no-cache perl make
 RUN cpan App::Prove;
